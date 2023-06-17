@@ -1,0 +1,14 @@
+{% extends 'base/main.html' %} {% block content %}
+<form method="POST" action="">
+  {% csrf_token %} {{form.as_p}}
+  <div class="text-center">
+    {% if request.resolver_match.url_name == "post-edit" %}
+    <button type="submit" class="btn btn-primary">Update</button>
+    {% else %}
+    <button type="submit" class="btn btn-primary">Create</button>
+    {% endif %}
+    <a href="{% url 'posts' %}" class="btn btn-secondary">Go back</a>
+  </div>
+</form>
+
+{% endblock content %}
