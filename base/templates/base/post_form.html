@@ -1,7 +1,7 @@
 {% extends 'base/main.html' %}
 {% block content %}
-<form method="POST" action="">
-  {% csrf_token %} {{form.as_p}}
+<form method="POST" enctype="multipart/form-data">
+  {% csrf_token %} {{form.as_p}} {{form.media}}
   <div class="text-center">
     {% if request.resolver_match.url_name == "post-edit" %}
     <button type="submit" class="btn btn-primary">Update</button>

@@ -2,6 +2,11 @@
 
 <div class="card box-shadows">
   <div class="card-body">
+    {% if post.image%}
+    <img class="img-thumbnail" src={{post.image.url}} />
+    {% else %}
+    <img class="img-thumbnail" src="" />
+    {% endif %}
     <h1 class="card-title">{{post.title}}</h1>
     <p>{{post.description}}</p>
     <hr />

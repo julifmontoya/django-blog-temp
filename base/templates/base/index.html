@@ -8,7 +8,11 @@
             {% for post in posts %}
             <div class="col-md-4">
                 <div class="card mb-4 box-shadows">
-                    <img class="card-img-top" src="https://via.placeholder.com/150x70.png">
+                    {% if post.image%}
+                    <img class="card-img-top" src={{post.image.url}} />
+                    {% else %}
+                    <img class="card-img-top" src="" />
+                    {% endif %}
                     <div class="card-body">
                         <h4 class="card-title">{{post.title}}</h4>
                         <p class="card-text max-lines">{{post.description}}</p>

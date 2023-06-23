@@ -49,7 +49,7 @@ class PostListProvider(LoginRequiredMixin, ListView):
 
 class PostCreate(LoginRequiredMixin, CreateView):
     model = Post
-    fields = ['title', 'description']
+    fields = ['title', 'description', 'image']
     success_url = reverse_lazy('posts')
 
     def form_valid(self, form):
@@ -59,7 +59,7 @@ class PostCreate(LoginRequiredMixin, CreateView):
 
 class PostUpdate(LoginRequiredMixin, UpdateView):
     model = Post
-    fields = ['title', 'description']
+    fields = ['title', 'description', 'image']
     success_url = reverse_lazy('posts')
 
     def get_queryset(self):
