@@ -1,5 +1,4 @@
 <nav class="navbar navbar-dark bg-dark mb-5">
-
     {% if request.user.is_authenticated%}
     <a class="navbar-brand" href="{% url 'posts' %}"><svg width="36" height="36"
         viewBox="0 0 612 612" xmlns="http://www.w3.org/2000/svg" focusable="false">
@@ -23,8 +22,6 @@
         </path>
     </svg><span> Nomad Travel Blog</span></a>
     {% endif %}
-       
-
     <ul class="nav nav-pills">
         {% if request.user.is_authenticated%}
         <li class="nav-item">
@@ -50,13 +47,6 @@
             <a class="nav-link" href="{% url 'login' %}">Log in</a>
           </li> 
         {% endif %}
-<!--         <li class="nav-item">
-            {% if request.user.is_authenticated%}
-            <a class="nav-link" href="{% url 'logout' %}">Logout</a>
-            {% else %}
-            <a class="nav-link" href="{% url 'login' %}">Log in</a>
-            {% endif %}
-        </li> -->
     </ul>
 </nav>
 
