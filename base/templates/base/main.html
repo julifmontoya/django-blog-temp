@@ -95,14 +95,6 @@
       text-align: right;
     }
     /* ==========================================================================
-      Nav
-    ========================================================================== */
-    .nav-user {
-      padding: 8px;
-      color: white;
-      display: block;
-    }
-    /* ==========================================================================
       Forms
     ========================================================================== */
     label {
@@ -164,7 +156,7 @@
     #hint_id_password2 {
       display: none;
     }
-     /* ==========================================================================
+    /* ==========================================================================
       NavBar
     ========================================================================== */
     .btn-dark {
@@ -180,17 +172,25 @@
     .nav-item a:hover {
       background-color: #424649;
     }
+    @media (min-width: 992px) {
+      .navbar-collapse {
+        flex-grow: 0;
+      }
+    }
+    /*    
+    
+    
+     */
     /* ==========================================================================
       Category tag
     ========================================================================== */
-    .categoy-tag{
-    background-color: #6c757d;
-    border-radius: 0.375rem;
-    padding: 7px;
-    font-size: 14px;
-    color: #fff;
-}
-
+    .categoy-tag {
+      background-color: #6c757d;
+      border-radius: 0.375rem;
+      padding: 7px;
+      font-size: 14px;
+      color: #fff;
+    }
   </style>
 
   <body>
@@ -211,7 +211,6 @@
       integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
       crossorigin="anonymous"
     ></script>
-    <script>
-    </script>
+    <script></script>
   </body>
 </html>
