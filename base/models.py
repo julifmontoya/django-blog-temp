@@ -31,7 +31,7 @@ class Comment(models.Model):
     created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"Comment {self.body} by {self.name}"
+        return f"Comment {self.post} by {self.name}"
 
     class Meta:
         ordering = ["created"]
