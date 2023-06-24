@@ -5,7 +5,9 @@ from django.contrib.auth.views import LoginView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
-from .models import Post, Comment
+from .models import Post, Comment, Category
+from django.contrib import messages
+from .mixins import SuccessMessageMixin
 
 
 class CustomLogin(LoginView):
@@ -15,6 +17,12 @@ class CustomLogin(LoginView):
 
     def get_success_url(self):
         return reverse_lazy('posts')
+
+    def form_valid(self, form):
+        # Add success message
+        messages.success(self.request, "Login successful.")
+
+        return super().form_valid(form)
 
 
 class Register(FormView):
@@ -27,12 +35,16 @@ class Register(FormView):
         user = form.save()
         if user is not None:
             login(self.request, user)
-        return super(Register, self).form_valid(form)
+
+            # Add success message
+            messages.success(self.request, "Registration successful. You are now logged in.")
+
+        return super().form_valid(form)
 
     def get(self, *args, **kwargs):
-        if (self.request.user.is_authenticated):
+        if self.request.user.is_authenticated:
             return redirect('posts')
-        return super(Register, self).get(*args, **kwargs)
+        return super().get(*args, **kwargs)
 
 
 class PostListProvider(LoginRequiredMixin, ListView):
@@ -49,18 +61,22 @@ class PostListProvider(LoginRequiredMixin, ListView):
 
 class PostCreate(LoginRequiredMixin, CreateView):
     model = Post
-    fields = ['title', 'description', 'image']
+    fields = ['title', 'description', 'category', 'image']
     success_url = reverse_lazy('posts')
 
     def form_valid(self, form):
         form.instance.user = self.request.user
-        return super(PostCreate, self).form_valid(form)
+       # Add success message
+        messages.success(self.request, "Post created successfully.")
+
+        return super().form_valid(form)
 
 
-class PostUpdate(LoginRequiredMixin, UpdateView):
+class PostUpdate(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
     model = Post
-    fields = ['title', 'description', 'image']
+    fields = ['title', 'description', 'category', 'image']
     success_url = reverse_lazy('posts')
+    success_message = "Post updated successfully"
 
     def get_queryset(self):
         return self.model.objects.filter(user=self.request.user)
@@ -78,6 +94,9 @@ class PostList(ListView):
     template_name = 'base/post_list.html'
     context_object_name = 'posts'
 
+    def get(self, request, *args, **kwargs):
+        return super().get(request, *args, **kwargs)
+
 
 class PostDetail(DetailView):
     model = Post
@@ -94,4 +113,29 @@ class AddCommentView(CreateView):
 
     def form_valid(self, form):
         form.instance.post_id = self.kwargs['pk']
+
+        # Add success message
+        messages.success(self.request, "Comment added successfully")
+
         return super().form_valid(form)
+
+
+class CatListView(ListView):
+    fields = '__all__'
+    template_name = 'base/category.html'
+    context_object_name = 'catlist'
+
+    def get_queryset(self):
+        content = {
+            'cat': self.kwargs['category'],
+            'posts': Post.objects.filter(category__id=self.kwargs['category'])
+        }
+        return content
+
+
+def category_data(request):
+    category_data = Category.objects.values('id', 'name')
+    context = {
+        "category_data": category_data,
+    }
+    return context

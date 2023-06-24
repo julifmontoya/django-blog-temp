@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import AddCommentView, PostList, PostDetail, PostListProvider, PostUpdate, PostCreate, PostDelete, CustomLogin, Register
+from .views import CatListView, AddCommentView, PostList, PostDetail, PostListProvider, PostUpdate, PostCreate, PostDelete, CustomLogin, Register
 from django.contrib.auth.views import LogoutView
 
 urlpatterns = [
@@ -12,5 +12,6 @@ urlpatterns = [
     path('provider/post-list', PostListProvider.as_view(), name='posts'),
     path('provider/post-create/', PostCreate.as_view(), name='post-create'),
     path('provider/post-edit/<int:pk>/', PostUpdate.as_view(), name='post-edit'),
-    path('provider/post-delete/<int:pk>/', PostDelete.as_view(), name='post-delete')
+    path('provider/post-delete/<int:pk>/', PostDelete.as_view(), name='post-delete'),
+    path('category/<category>/', CatListView.as_view(), name='category')
 ]
