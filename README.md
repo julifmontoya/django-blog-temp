@@ -29,34 +29,35 @@ All functionality and development of this project were managed using [Trello](ht
 
 ## 6. User stories:
 
-6.1 Register:
+####  6.1 Register:
 As a site user, I want to be able to register on the application in order to publish or update posts. [Wireframe](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/6_1_Register.png)
 
-6.2 Login:
+####  6.2 Login:
 As a site user, I want to be able to log in to the application in order to publish or update posts. [Wireframe](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/6_2_Login.png)
 
-6.3 Post List for Non-Logged-in Users:
+####  6.3 Post List for Non-Logged-in Users:
 As a site user, I want to be able to log in to the application in order to publish or update posts. [Wireframe](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/6_3_Post%20List%20Non-Logged-in.png)
 
-6.4 Post List for Logged-in Users:
+####  6.4 Post List for Logged-in Users:
 As a site user, I want to be able to view the posts that I create for update or view the post. [Wireframe](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/6_4_FIlter%20Category.png)
 
-6.5 Filter Category for Non-Logged-in Users:
+####  6.5 Filter Category for Non-Logged-in Users:
 As a site user, I want the ability to filter posts based on different categories.
 [Wireframe](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/6_5_Comments.png)
 
-6.6 Comments for Non-Logged-in Users:
+####  6.6 Comments for Non-Logged-in Users:
 As a site user, I want the ability to leave comments on each post. [Wireframe](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/6_6_Post%20List%20for%20Logged-in.png)
 
-6.7 Create Post:
+#### 6.7 Create Post:
 As a site user, I want to be able to create a post to publish on the blog. [Wireframe](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/6_7_Create%20Post.png)
 
-6.8 Update Post:
+#### 6.8 Update Post:
 As a site user, I want to be able to edit a post and make changes to its fields.
 [Wireframe](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/6_8_Update.png.png)
 
-6.9 Delete Post:
+#### 6.9 Delete Post:
 As a site user, I want to be able to delete a post so that it no longer appears on the blog. [Wireframe](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/6_9_Delete%20Confirm.png)
+
 
 ## 7. Design Structure:
 
