@@ -61,7 +61,6 @@ As a site user, I want to be able to delete a post so that it no longer appears 
 Google font Lato was chosen with to be used across the entire site.
 
 #### 7.2 Colors
-
 | Color         | Hex     | Example                                                  |
 | ------------- | ------- | -------------------------------------------------------- |
 | Background    | #f8f9fa | ![#f8f9fa](https://via.placeholder.com/10/f8f9fa?text=+) |
@@ -72,7 +71,6 @@ Google font Lato was chosen with to be used across the entire site.
 #### 7.3 Navigation
 - Navbar is on top to facilitate users to navigate through pages easily
 - Add, Edit/Update are straightforward forms to allow users to use the features without issues
-
 
 ## 8. Results
 
