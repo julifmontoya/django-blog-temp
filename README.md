@@ -55,10 +55,9 @@ As a site user, I want to be able to edit a post and make changes to its fields.
 As a site user, I want to be able to delete a post so that it no longer appears on the blog. [Wireframe](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/6_9_Delete%20Confirm.png)
 
 ## 7. Design Structure
-All functionality and development of this project were managed using [Trello](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/6_9_Delete%20Confirm.png)
 
-
-#### 7.1 Fonts
+#### 7.1 Font
+Google font Lato was chosen with to be used across the entire site.
 
 #### 7.2 Colors
 
@@ -70,15 +69,43 @@ All functionality and development of this project were managed using [Trello](ht
 | Example Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
 
 #### 7.3 Navigation
+- Navbar is on top to facilitate users to navigate through pages easily
+- Add, Edit/Update are straightforward forms to allow users to use the features without issues
+
 
 ## 8. Results
-All functionality and development of this project were managed using [Trello](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/5_Trello.JPG)
+
+####  8.1 [Register]()
+
+####  8.2 [Login]()
+
+####  8.3 [Post List for Non-Logged-in Users]()
+
+####  8.4 [Post List for Logged-in Users]()
+
+####  8.5 [Filter Category for Non-Logged-in Users]()
+
+####  8.6 [Comments for Non-Logged-in Users]()
+
+#### 8.7 [Create Post]()
+
+#### 8.8 [Update Post]()
+
+#### 8.9 [Delete Post]()
 
 ## 9. Testing
-All functionality and development of this project were managed using [Trello](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/5_Trello.JPG)
+
 
 ## 10. Features left to implement
-All functionality and development of this project were managed using [Trello](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/5_Trello.JPG)
+I would like to: 
+-	Add a search bar to find travel posts
+-	Include a user profile page allowing users to edit, or delete their profile
+-	Add more fields to the blog like most likes
 
 ## 11. Deployment
-All functionality and development of this project were managed using [Trello](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/5_Trello.JPG)
+The site was deployed using Heroku, following the steps offered by Codeinstitute.
+- Using my Heroku account 
+- Create a new app whilst logged in
+- Connect your GitHub repository via "Connect to GitHub"
+- Set up your config vars.
+- Enable either "Automatic Deploy”
