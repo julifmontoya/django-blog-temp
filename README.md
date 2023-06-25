@@ -56,7 +56,7 @@ As a site user, I want to be able to edit a post and make changes to its fields.
 [Wireframe](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/6_8_Update.png.png)
 
 6.9 Delete Post:
-As a site user, I want to be able to delete a post so that it no longer appears on the blog. [Wireframe](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/6_2_Login.png)
+As a site user, I want to be able to delete a post so that it no longer appears on the blog. [Wireframe](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/6_9_Delete%20Confirm.png)
 
 ## 7. Design Structure:
 
