@@ -101,7 +101,7 @@ Google font Lato was chosen with to be used across the entire site.
 During the manual testing phase, I examined the user inputs and functionality of the website. My objective was to compare the feedback and results obtained from testing against the expected outcomes. Any unexpected outputs or outcomes encountered were promptly addressed and resolved.
 
 #### Desktop Testing:
-I thoroughly tested all aspects of the site on this browser, and I am pleased to report that everything functions flawlessly. Pages load swiftly, and all features, including CRUD operations, user authentication (login/logout), register process, and trips addition, work without any issues.
+I thoroughly tested all aspects of the site on this browser, and I am pleased to report that everything functions flawlessly. Pages load swiftly, and all features, including CRUD operations, user authentication (login/logout), register process, trips addition, and category filter work without any issues.
 
 #### Mobile Testing:
 I conducted thorough testing on three different mobile devices: Apple iPhone 11, Samsung S20FE, and Samsung S7 tablet. The website showcased excellent responsiveness and adaptability across various devices. The site performed seamlessly on Apple's Safari browser as well.
