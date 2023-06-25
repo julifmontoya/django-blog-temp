@@ -96,6 +96,13 @@ Google font Lato was chosen with to be used across the entire site.
 ## 9. Testing
 
 
+## 9. Testing
+### Lighthouse report
+### WAVE Webaim Accessibility testing
+### CSS Validator results
+### HTML Validation
+### Manual Testing
+
 ## 10. Features left to implement
 I would like to: 
 -	Add a search bar to find travel posts
@@ -109,3 +116,6 @@ The site was deployed using Heroku, following the steps offered by Codeinstitute
 - Connect your GitHub repository via "Connect to GitHub"
 - Set up your config vars.
 - Enable either "Automatic Deploy”
+
+## 12. Credits and references
+Background image of a stage viewed from the crowd, artwanted
