@@ -6,7 +6,7 @@
     <div class="card-body">
       <form method="POST" action="">
         {% csrf_token %} {{form.as_p}}
-        <button type="submit" class="btn btn-primary w-100 mb-3">Login</button>
+        <button type="submit" class="btn btn-secondary w-100 mb-3">Login</button>
         <div>
           <span class="mr-10">Dont' have an account?: </span
           ><a href="{% url 'register' %}">Register</a>

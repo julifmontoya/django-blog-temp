@@ -4,11 +4,11 @@
   {% csrf_token %} {{form.as_p}} {{form.media}}
   <div class="text-center">
     {% if request.resolver_match.url_name == "post-edit" %}
-    <button type="submit" class="btn btn-primary">Update</button>
+    <button type="submit" class="btn btn-secondary">Update</button>
     {% else %}
-    <button type="submit" class="btn btn-primary">Create</button>
+    <button type="submit" class="btn btn-secondary">Create</button>
     {% endif %}
-    <a href="{% url 'posts' %}" class="btn btn-secondary">Go back</a>
+    <a href="{% url 'posts' %}" class="btn btn-outline-back">Go back</a>
   </div>
 </form>
 
