@@ -37,10 +37,10 @@
           <span class="nav-link">Hello {{request.user|title}}</span>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'post-create' %}">Add Post</a>
+          <a class="nav-link" href="{% url 'posts' %}">Travel list</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'posts' %}">My Blog Post</a>
+          <a class="nav-link" href="{% url 'post-create' %}">Add Trip</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{% url 'logout' %}">Logout</a>
@@ -48,7 +48,7 @@
       </ul>
     </div>
     {% else %}
-    <a class="navbar-brand" href="{% url 'posts' %}"
+    <a class="navbar-brand" href="{% url 'posts-list' %}"
       ><svg
         width="36"
         height="36"
@@ -76,7 +76,7 @@
           <a class="nav-link" href="{% url 'login' %}">Log in</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'posts-list' %}">Blog List</a>
+          <a class="nav-link" href="{% url 'posts-list' %}">All Trips</a>
         </li>
         <div class="dropdown">
           <button
@@ -86,7 +86,7 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Categories
+            Types
           </button>
           <ul
             class="dropdown-menu dropdown-menu-dark"
