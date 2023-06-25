@@ -121,4 +121,4 @@ The site was deployed using Heroku, following the steps offered by Codeinstitute
 - Enable either "Automatic Deploy”
 
 ## 12. Credits and references
-Background image of a stage viewed from the crowd, artwanted
+Travel images of blog was taken from https://unsplash.com/
