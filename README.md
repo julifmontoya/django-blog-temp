@@ -61,7 +61,7 @@ As a site user, I want to be able to delete a post so that it no longer appears 
 Google font Lato was chosen with to be used across the entire site.
 
 #### 7.2 Colors
-| Color         | Hex     | Example                                                  |
+| Use           | Hex     | Color                                                    |
 | ------------- | ------- | -------------------------------------------------------- |
 | Background    | #f8f9fa | ![#f8f9fa](https://via.placeholder.com/10/f8f9fa?text=+) |
 | NavBar        | #343a40 | ![#343a40](https://via.placeholder.com/10/343a40?text=+) |
