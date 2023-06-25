@@ -61,11 +61,11 @@ Google font Lato was chosen with to be used across the entire site.
 | Use           | Hex     | Color                                                    |
 | ------------- | ------- | -------------------------------------------------------- |
 | Background    | #f8f9fa | ![#f8f9fa](https://via.placeholder.com/10/f8f9fa?text=+) |
-| Cards         | #fff    | ![#fff](https://via.placeholder.com/10/fff?text=+) |
+| Cards         | #fff    | ![#fff](https://via.placeholder.com/10/fff?text=+)       |
 | NavBar        | #343a40 | ![#343a40](https://via.placeholder.com/10/343a40?text=+) |
 | Footer        | #424649 | ![#424649](https://via.placeholder.com/10/424649?text=+) |
 | Btn Primary   | #6c757d | ![#6c757d](https://via.placeholder.com/10/6c757d?text=+) |
-| Inputs        | #ccc    | ![#ccc](https://via.placeholder.com/10/ccc?text=+) |
+| Inputs        | #ccc    | ![#ccc](https://via.placeholder.com/10/ccc?text=+)       |
 
 ### 7.3 Navigation
 - Navbar is on top to facilitate users to navigate through pages easily
