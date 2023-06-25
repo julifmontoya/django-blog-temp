@@ -17,6 +17,17 @@ Create a platform where travelers can share their journeys, insights, and recomm
 - Crispyforms were used to display forms.
 - Responsive CSS was implemented using Bootstrap 5.
 
-## 3. Database Design:
+## 4. Database Design:
 [Database schema](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/3_DB_Schema.jpg)
 
+## 5. Agile Methodology:
+All functionality and development of this project were managed using [Trello](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/5_Trello.JPG)
+
+## 6. User stories:
+All functionality and development of this project were managed using [Trello](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/5_Trello.JPG)
+
+## 7. Design Structure:
+All functionality and development of this project were managed using [Trello](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/5_Trello.JPG)
+
+## 7. Design Structure:
+All functionality and development of this project were managed using [Trello](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/5_Trello.JPG)
