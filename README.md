@@ -62,7 +62,7 @@ Google font Lato was chosen with to be used across the entire site.
 
 #### 7.2 Colors
 
-| Color             || Color|Hex                                                                |
+| Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
 | Background Color | ![#f8f9fa](https://via.placeholder.com/10/f8f9fa;?text=+) #f8f9fa; |
 | Example Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
