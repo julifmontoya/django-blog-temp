@@ -1,227 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog App</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.0/css/all.css"
-    />
-  </head>
-  <style>
-    /* ==========================================================================
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.0/css/all.css" />
+</head>
+<style>
+  /* ==========================================================================
       General
     ========================================================================== */
-    :root {
-      --color-border-input: #ccc;
-      --color-dark: #343a40;
-      --color-semi-dark: #424649;
-      --color-white: #fff;
-    }
+  :root {
+    --color-border-input: #ccc;
+    --color-dark: #343a40;
+    --color-semi-dark: #424649;
+    --color-white: #fff;
+  }
 
-    body {
-      background-color: #f8f9fa;
-      font-family: Lato, sans-serif;
-      padding: 0;
-      margin: 0;
-    }
+  body {
+    background-color: #f8f9fa;
+    font-family: Lato, sans-serif;
+    padding: 0;
+    margin: 0;
+  }
 
-    .max-lines {
-      overflow: hidden;
-      display: -webkit-box;
-      -webkit-line-clamp: 4;
-      line-clamp: 2;
-      -webkit-box-orient: vertical;
-    }
+  .max-lines {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
 
-    .flex-center {
-      display: flex;
-      justify-content: center;
-    }
+  .flex-center {
+    display: flex;
+    justify-content: center;
+  }
 
-    a {
-      text-decoration: none;
-    }
-    /* ==========================================================================
+  a {
+    text-decoration: none;
+  }
+
+  /* ==========================================================================
       Wrapper
     ========================================================================== */
-    @media (min-width: 1200px) {
-      .content-general,
-      .navbar {
-        padding: 0 60px;
-      }
-    }
+  @media (min-width: 1200px) {
 
-    @media (max-width: 1199.99px) and (min-width: 992px) {
-      .content-general,
-      .navbar {
-        padding: 0 40px;
-      }
+    .content-general,
+    .navbar {
+      padding: 0 60px;
     }
+  }
 
-    @media (max-width: 991px) and (min-width: 768px) {
-      .content-general,
-      .navbar {
-        padding: 0 30px;
-      }
-    }
+  @media (max-width: 1199.99px) and (min-width: 992px) {
 
-    @media (max-width: 767px) and (min-width: 480px) {
-      .content-general,
-      .navbar {
-        padding: 0 15px;
-      }
+    .content-general,
+    .navbar {
+      padding: 0 40px;
     }
+  }
 
-    @media (max-width: 479px) {
-      .content-general,
-      .navbar {
-        padding: 0 5px;
-      }
+  @media (max-width: 991px) and (min-width: 768px) {
+
+    .content-general,
+    .navbar {
+      padding: 0 30px;
     }
-    /* ==========================================================================
+  }
+
+  @media (max-width: 767px) and (min-width: 480px) {
+
+    .content-general,
+    .navbar {
+      padding: 0 15px;
+    }
+  }
+
+  @media (max-width: 479px) {
+
+    .content-general,
+    .navbar {
+      padding: 0 5px;
+    }
+  }
+
+  /* ==========================================================================
       Forms
     ========================================================================== */
-    label {
-      display: block;
-    }
+  label {
+    display: block;
+  }
 
-    input {
-      margin-bottom: 15px;
-      border: 1px solid var(--color-border-input);
-      border-radius: 4px;
-      width: 100%;
-      height: 38px;
-      padding: 6px 7px;
-      outline: none;
-      box-sizing: border-box;
-    }
+  input {
+    margin-bottom: 15px;
+    border: 1px solid var(--color-border-input);
+    border-radius: 4px;
+    width: 100%;
+    height: 38px;
+    padding: 6px 7px;
+    outline: none;
+    box-sizing: border-box;
+  }
 
-    button,
-    input,
-    optgroup,
-    select,
-    textarea {
-      font-family: inherit;
-      font-size: inherit;
-    }
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit;
+    font-size: inherit;
+  }
 
-    .form-control,
-    select {
-      font-family: inherit;
-      font-size: inherit;
-      font-weight: 500;
-      width: 100%;
-      height: 38px;
-      padding: 6px 7px;
-      border: 1px solid var(--color-border-input);
-      border-radius: 4px;
-      outline: none;
-      box-sizing: border-box;
-    }
+  .form-control,
+  select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 500;
+    width: 100%;
+    height: 38px;
+    padding: 6px 7px;
+    border: 1px solid var(--color-border-input);
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+  }
 
-    .form-control:focus,
-    input:focus,
-    textarea:focus,
-    select:focus {
-      border-color: var(--color-semi-dark);
-      box-shadow: 0 0 1px 0 var(--color-semi-dark);
-    }
+  .form-control:focus,
+  input:focus,
+  textarea:focus,
+  select:focus {
+    border-color: var(--color-semi-dark);
+    box-shadow: 0 0 1px 0 var(--color-semi-dark);
+  }
 
-    textarea {
-      height: auto;
-      border: 1px solid var(--color-border-input);
-      width: 100%;
-      outline: none;
-      box-sizing: border-box;
-    }
+  textarea {
+    height: auto;
+    border: 1px solid var(--color-border-input);
+    width: 100%;
+    outline: none;
+    box-sizing: border-box;
+  }
 
-    #hint_id_username,
-    #hint_id_password1,
-    #hint_id_password2 {
-      display: none;
-    }
-    /* ==========================================================================
+  #hint_id_username,
+  #hint_id_password1,
+  #hint_id_password2 {
+    display: none;
+  }
+
+  /* ==========================================================================
       NavBar & Footer
     ========================================================================== */
-    @media (min-width: 992px) {
-      .navbar-collapse {
-        flex-grow: 0;
-      }
+  @media (min-width: 992px) {
+    .navbar-collapse {
+      flex-grow: 0;
     }
-    .navbar-custom {
-      background-color: var(--color-dark);
-    }
-    .nav-link,
-    .nav-link:hover,
-    .navbar-brand,
-    .navbar-brand:hover {
-      color: var(--color-white);
-    }
-    .nav-item a:hover {
-      background-color: var(--color-semi-dark);
-    }
-    .footer {
-      background-color: var(--color-semi-dark);
-    }
-    .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    }
-    .navbar-toggler{
-      color: var(--color-white);
-      border: 1px solid;
-    }
-    /* ==========================================================================
+  }
+
+  .navbar-custom {
+    background-color: var(--color-dark);
+  }
+
+  .nav-link,
+  .nav-link:hover,
+  .navbar-brand,
+  .navbar-brand:hover {
+    color: var(--color-white);
+  }
+
+  .nav-item a:hover {
+    background-color: var(--color-semi-dark);
+  }
+
+  .footer {
+    background-color: var(--color-semi-dark);
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+  .navbar-toggler {
+    color: var(--color-white);
+    border: 1px solid;
+  }
+
+  .navbar-toggler-icon {
+    display: inline-block;
+    width: 1.0em;
+    height: 1.0em;
+  }
+
+  /* ==========================================================================
       Btn Custom
     ========================================================================== */
-    .categoy-tag {
-      background-color: var(--color-semi-dark);
-      color: var(--color-white);
-      border-radius: 0.375rem;
-      padding: 7px;
-      font-size: 14px;
-    }
+  .categoy-tag {
+    background-color: var(--color-semi-dark);
+    color: var(--color-white);
+    border-radius: 0.375rem;
+    padding: 7px;
+    font-size: 14px;
+  }
 
-    .btn-outline-back {
-      color: var(--color-semi-dark);
-      border-color: var(--color-semi-dark);
-    }
-    .btn-outline-back:hover {
-      background-color: var(--color-semi-dark);
-      color: var(--color-white);
-    }
-  </style>
+  .btn-outline-back {
+    color: var(--color-semi-dark);
+    border-color: var(--color-semi-dark);
+  }
 
-  <body>
-    {% include 'base/navbar.html' %}
-    <div class="content-general">
-      <div class="container-app mt-70">
-        {% block content %} {% endblock content %}
-      </div>
+  .btn-outline-back:hover {
+    background-color: var(--color-semi-dark);
+    color: var(--color-white);
+  }
+
+  .btn-dark {
+    background-color: var(--color-dark);
+    border: var(--color-dark);
+  }
+
+  .dropdown-menu-dark {
+    border: 1px solid var(--color-dark);
+  }
+</style>
+
+<body>
+  {% include 'base/navbar.html' %}
+  <div class="content-general">
+    <div class="container-app mt-70">
+      {% block content %} {% endblock content %}
     </div>
-    {% include 'base/footer.html' %}
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-      crossorigin="anonymous"
-    ></script>
-    <script></script>
-  </body>
+  </div>
+  {% include 'base/footer.html' %}
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+  <script></script>
+</body>
+
 </html>
