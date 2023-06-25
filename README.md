@@ -94,9 +94,6 @@ Google font Lato was chosen with to be used across the entire site.
 #### 8.9 [Delete Post]()
 
 ## 9. Testing
-
-
-## 9. Testing
 ### Lighthouse report
 ### WAVE Webaim Accessibility testing
 ### CSS Validator results
