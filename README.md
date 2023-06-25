@@ -62,12 +62,12 @@ Google font Lato was chosen with to be used across the entire site.
 
 #### 7.2 Colors
 
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Background Color | ![#f8f9fa](https://via.placeholder.com/10/f8f9fa;?text=+) #f8f9fa; |
-| Example Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
-| Example Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
-| Example Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
+| Color         | Hex     | Example                                                  |
+| ------------- | ------- | -------------------------------------------------------- |
+| Background    | #f8f9fa | ![#f8f9fa](https://via.placeholder.com/10/f8f9fa?text=+) |
+| NavBar        | #343a40 | ![#343a40](https://via.placeholder.com/10/343a40?text=+) |
+| Footer        | #424649 | ![#424649](https://via.placeholder.com/10/424649?text=+) |
+| Btn Primary   | #6c757d | ![#6c757d](https://via.placeholder.com/10/6c757d?text=+) |
 
 #### 7.3 Navigation
 - Navbar is on top to facilitate users to navigate through pages easily
