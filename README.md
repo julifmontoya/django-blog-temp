@@ -29,5 +29,14 @@ All functionality and development of this project were managed using [Trello](ht
 ## 7. Design Structure:
 All functionality and development of this project were managed using [Trello](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/5_Trello.JPG)
 
-## 7. Design Structure:
+## 8. Results:
+All functionality and development of this project were managed using [Trello](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/5_Trello.JPG)
+
+## 9. Testing:
+All functionality and development of this project were managed using [Trello](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/5_Trello.JPG)
+
+## 10. Features left to implement:
+All functionality and development of this project were managed using [Trello](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/5_Trello.JPG)
+
+## 11. Deployment:
 All functionality and development of this project were managed using [Trello](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/5_Trello.JPG)
