@@ -9,6 +9,7 @@ The objective is to design a travel blog application that allows users to create
 Create a platform where travelers can share their journeys, insights, and recommendations, as well as leave comments on each post. The platform should prioritize easy navigation and be responsive across various devices.
 
 ## 3. Technologies I've used
+- Balsamiq was used to create the wireframes during the design process
 - GitHub was used to store the project.
 - Visual Studio Code was my choice of IDE.
 - PostgreSQL was used as the relational database.
