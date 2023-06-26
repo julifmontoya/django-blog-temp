@@ -96,7 +96,8 @@ Google font Lato was chosen with to be used across the entire site.
 
 ## 9. Testing
 ### 9.1 Lighthouse report
-
+Home page [Result](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/9_1_Home.JPG)
+Login page [Result](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/9_1_Login.JPG)
 
 ### 9.2 WAVE Webaim Accessibility testing
 The WAVE tool was used to test all pages on the app. Some errors repeat over each page tested, these were due to the social links not having the link. 
