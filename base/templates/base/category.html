@@ -11,15 +11,11 @@
         <img class="card-img-top" src="" />
         {% endif %}
         <div class="card-body">
-          <h4 class="card-title">{{post.title}}</h4>
+          <h2 class="card-title">{{post.title}}</h2>
           <p class="card-text max-lines">{{post.description}}</p>
           <span class="categoy-tag">{{post.category}}</span>
           <div class="text-center">
-            <a
-              href="{% url 'post-detail' post.id %}"
-              class="btn btn-md btn-outline-secondary"
-              >View</a
-            >
+            <a href="{% url 'post-detail' post.id %}" class="btn btn-md btn-outline-secondary">View</a>
           </div>
         </div>
       </div>
