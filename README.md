@@ -102,7 +102,7 @@ Google font Lato was chosen with to be used across the entire site.
 
 
 ### 9.3 CSS Validator results
-I use https://jigsaw.w3.org/css-validator/validator.html.en option Validate by direct input the custom CSS style.css. [Result](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/9_3_CssChecker.JPG)
+I use https://jigsaw.w3.org/css-validator/validator.html.en option Validate by direct input the style.css. [Result](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/9_3_CssChecker.JPG)
 
 ### 9.4 HTML Validation
 I use https://validator.w3.org/ option Validate by URI to test html. [Result](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/9_4_HtmlChecker.JPG)
