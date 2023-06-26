@@ -125,4 +125,4 @@ The site was deployed using Heroku, following the steps offered by Codeinstitute
 - Enable either "Automatic Deploy”
 
 ## 12. Credits and references
-Travel images of blog was taken from https://unsplash.com/
+Travel blog images was taken from https://unsplash.com/
