@@ -99,7 +99,11 @@ Google font Lato was chosen with to be used across the entire site.
 
 
 ### 9.2 WAVE Webaim Accessibility testing
+The WAVE tool was used to test all pages on the app. Some errors repeat over each page tested, these were due to the social links not having the link. 
 
+Home page WAVE [Result](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/9_2_Home.JPG)
+Login page WAVE [Result](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/9_2_Login.JPG)
+Register page WAVE [Result](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/9_2_Register.JPG)
 
 ### 9.3 CSS Validator results
 I use https://jigsaw.w3.org/css-validator/validator.html.en option Validate by direct input the style.css. [Result](https://github.com/julifmontoya/django-blog-temp/blob/master/doc/9_3_CssChecker.JPG)
