@@ -74,6 +74,8 @@ Google font Lato was chosen with to be used across the entire site.
 - Add, Edit/Update are straightforward forms to allow users to use the features without issues
 
 ## 8. Results
+Here is a link to the final project [Link](https://django-blog-temp.vercel.app/)
+
 ###  8.1 [Register]()
 
 ###  8.2 [Login]()
