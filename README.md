@@ -1,5 +1,5 @@
 
-# Nomads Travel Blog
+# Travel Blog Django 4.0 Templete
 
 ## 1. Definition Problem
 
